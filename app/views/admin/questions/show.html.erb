@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @question.content %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @question.weight %>
+</p>
+
+<p>
+  <strong>Admin:</strong>
+  <%= @question.admin %>
+</p>
+
+<%= link_to 'Show', [:admin, @question], :class => 'btn btn-info' %> |
+<%= link_to 'Cancel', admin_questions_path, :class => 'btn btn-warning' %>

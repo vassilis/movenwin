@@ -2,3 +2,75 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.navbar {
+  margin: 0;
+}
+
+.points-section {
+  max-width: 800px;
+  margin: 0 auto;
+  background: url("bg.jpg") 50% 50% no-repeat;
+  background-size: 100%;
+  padding: 50px 0;
+}
+
+.points-user-wrapper {
+  width: 350px;
+  margin: 0 auto;
+  @extend .clearfix;
+}
+
+.points-user-all {
+  width: 120px;
+  height: 120px;
+  padding-top: 30px;
+  background: lightblue;
+  border: 5px darken(lightblue, 10%) solid;
+  border-radius: 50%;
+  text-align: center;
+  color: darken(lightblue, 50%);
+  .num {
+    display: block;
+    font-size: 1.7em;
+    font-weight: bold;
+    line-height: 1;
+  }
+}
+.points-user {
+  width: 220px;
+  height: 220px;
+  padding-top: 60px;
+  background: lightgreen;
+  border: 5px darken(lightgreen, 10%) solid;
+  border-radius: 50%;
+  text-align: center;
+  float: right;
+  margin-top: -50px;
+  color: darken(lightgreen, 60%);
+  .num {
+    display: block;
+    font-size: 5em;
+    font-weight: bold;
+    line-height: 1;
+  }
+}
+
+.list-events {
+  max-width: 800px;
+  margin: 0 auto 50px;
+  .glyphicon {
+    font-size: 16px;
+    margin-right: 10px;
+    background: #222;
+    color: #FFF;
+    padding: 5px;
+    border-radius: 50%;
+  }
+  .glyphicon-gift {
+    background: darkgreen;
+  }
+  .glyphicon-shopping-cart {
+    background: darkorange;
+  }
+}

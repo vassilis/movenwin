@@ -25,6 +25,7 @@ class Admin::QuestionsController < Admin::BaseController
   # POST /questions.json
   def create
     @question = Question.new(question_params)
+    @question.admin = current_admin
 
     respond_to do |format|
       if @question.save

@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   authenticate :admin do
     namespace :admin do
       get "dashboard" => "dashboard#index"
-      get "/" => "dashboard#index"
+      get "/" => "questions#index"
       resources :questions
     end
   end

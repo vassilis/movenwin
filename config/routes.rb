@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :questions
   get 'welcome/index'
 
   root 'welcome#index'
@@ -10,6 +9,7 @@ Rails.application.routes.draw do
     namespace :admin do
       get "dashboard" => "dashboard#index"
       get "/" => "dashboard#index"
+      resources :questions
     end
   end
 end

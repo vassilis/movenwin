@@ -1,4 +1,4 @@
-class QuestionsController < ApplicationController
+class Admin::QuestionsController < Admin::BaseController
   before_action :set_question, only: [:show, :edit, :update, :destroy]
 
   # GET /questions

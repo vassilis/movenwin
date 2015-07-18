@@ -112,13 +112,15 @@
 .list-events {
   max-width: 800px;
   margin: 0 auto 50px;
+  font-size: 1.2em;
   .glyphicon {
-    font-size: 16px;
+    font-size: 24px;
     margin-right: 10px;
     background: #222;
     color: #FFF;
-    padding: 5px;
+    padding: 10px;
     border-radius: 50%;
+    vertical-align: -6px;
   }
   .glyphicon-gift {
     background: darkgreen;

@@ -10,14 +10,11 @@
 
   <%= render "/admin/shared/nav" %>
   <div class="container">
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-
+    <%= render "/shared/alerts" %>
 
     <%= yield %>
 
   </div>
-
 
 </body>
 </html>

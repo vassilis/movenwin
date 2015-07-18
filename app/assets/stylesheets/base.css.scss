@@ -19,6 +19,13 @@
   width: 350px;
   margin: 0 auto;
   @extend .clearfix;
+  > div {
+    position: relative;
+  }
+  .glyphicon {
+    display: block;
+    position: absolute;
+  }
 }
 
 .points-user-all {
@@ -35,6 +42,10 @@
     font-size: 1.7em;
     font-weight: bold;
     line-height: 1;
+  }
+  .glyphicon {
+    top: -10px;
+    right: -10px;
   }
 }
 .points-user {
@@ -53,6 +64,10 @@
     font-size: 5em;
     font-weight: bold;
     line-height: 1;
+  }
+  .glyphicon {
+    top: -10px;
+    right: -10px;
   }
 }
 

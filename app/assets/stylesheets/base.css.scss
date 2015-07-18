@@ -129,3 +129,11 @@
     background: darkorange;
   }
 }
+
+.event-points {
+  @extend .label;
+  @extend .label-default;
+  float: right;
+  margin-top: 13px;
+  padding: 4px;
+}

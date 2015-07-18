@@ -5,13 +5,13 @@
 $ ->
 
   $(".points-user-all").on "click", ->
-    $(".welcome > *").addClass("hidden");
-    $(".list-win").removeClass("hidden");
+    $(".welcome > *").hide();
+    $(".list-win").removeClass("hidden").fadeIn();
 
   $(".points-user").on "click", ->
-    $(".welcome > *").addClass("hidden");
-    $(".list-buy").removeClass("hidden");
+    $(".welcome > *").hide();
+    $(".list-buy").removeClass("hidden").fadeIn();
 
   $(".button-events-list").on "click", ->
-    $(".welcome > *").addClass("hidden");
-    $(".list-events").removeClass("hidden");
+    $(".welcome > *").hide();
+    $(".list-events").removeClass("hidden").fadeIn();

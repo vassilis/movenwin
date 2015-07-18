@@ -26,3 +26,9 @@ Things you may want to cover:
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+
+== Install PostGIS in Ubuntu
+1. sudo aptitude install postgres postgis postgres-9.3-postgis
+2. createdb -U postgres postgis_db
+3. run command psql -d cities -f /usr/share/postgresql/8.4/contrib/postgis-1.5/postgis.sql
+4. run command psql -d cities -f /usr/share/postgresql/8.4/contrib/postgis-1.5/spatial_ref_sys.sql

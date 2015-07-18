@@ -11,3 +11,7 @@ $ ->
   $(".points-user").on "click", ->
     $(".welcome > *").addClass("hidden");
     $(".list-buy").removeClass("hidden");
+
+  $(".button-events-list").on "click", ->
+    $(".welcome > *").addClass("hidden");
+    $(".list-events").removeClass("hidden");

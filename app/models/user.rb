@@ -10,6 +10,6 @@ class User < ActiveRecord::Base
   end
 
   def remove_points(pts)
-  	self.current_pts = self.current_pts - pts
+  	self.current_pts = self.current_pts - pts.to_i
   end
 end

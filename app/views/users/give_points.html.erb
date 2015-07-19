@@ -1,14 +1,13 @@
-<div class="container">
-	<div class="jumbotron">
-		<h2>Δώρισε πόντους σε χρήστη</h2>
-		<%= form_tag("/users/remove_points",  method:"put") do %>
+
+<div class="text-center row">
+		<h2>Αποστολή πόντων σε χρήστη</h2><br>
+		<%= form_tag("/users/remove_points", method:"put", class: "col-sm-8 col-sm-offset-2") do %>
 			<div class="form-group">
-				<input type="text" name="email" class="form-control", placeholder='e-mail', style="width:600px"/>
+				<input type="text" name="email" class="form-control", placeholder='Ε-mail'>
 			<div>
 			<div class="form-group" style="margin-top:10px;">
-				<input type="text" name="points" class="form-control", placeholder='Πόντοι', style="width:600px"/>
+				<input type="text" name="points" class="form-control", placeholder='Πόντοι'>
 			</div>
 			<%=submit_tag('Αποστολή', :class=>"btn btn-primary") %>
 		<%end%>
-	</div>
 </div>

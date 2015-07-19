@@ -23,6 +23,10 @@
   font-family: 'Lobster', cursive;
 }
 
+.container {
+  max-width: 800px;
+}
+
 .points-section {
   position: relative;
   max-width: 800px;
@@ -148,4 +152,28 @@
   float: right;
   margin-top: 13px;
   padding: 4px;
+}
+
+#add-ticket-number a:hover, a:focus{
+  color:orange;
+  text-decoration: none;
+}
+
+.answers {
+  margin-top: 30px;
+  .glyphicon {
+    font-size: 48px;
+    margin: 10px;
+    border-radius: 50%;
+    color: #FFF;
+    background: #333;
+    padding: 20px;
+    cursor: pointer;
+  }
+  .glyphicon-thumbs-up {
+    background: green;
+  }
+  .glyphicon-thumbs-down {
+    background: orange;
+  }
 }

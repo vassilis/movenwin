@@ -1,6 +1,47 @@
 
 
 ready = ->
+  
+  $('#linechart').highcharts
+    chart: type: 'line'
+    title: text: 'Μηνιαίες Απαντήσεις'
+    xAxis: categories: [
+      'Jan'
+      'Feb'
+      'Mar'
+      'Apr'
+      'May'
+      'Jun'
+      'Jul'
+      'Aug'
+      'Sep'
+      'Oct'
+      'Nov'
+      'Dec'
+    ]
+    yAxis: title: text: '#Απαντήσεις'
+    plotOptions: line:
+      dataLabels: enabled: true
+      enableMouseTracking: false
+    series: [
+      {
+        name: 'Απαντήσεις / Μήνα'
+        data: [
+          70
+          60
+          90
+          140
+          180
+          210
+          250
+          260
+          230
+          180
+          130
+          90
+        ]
+      }
+    ]
 
   $('#overall-pie').highcharts
     chart:
@@ -36,6 +77,7 @@ ready = ->
         }
       ]
     } ]
+
   $('#yes-pie').highcharts
     chart:
       plotBackgroundColor: null

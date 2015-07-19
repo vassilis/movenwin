@@ -21,6 +21,15 @@ class AnswersController < ApplicationController
   def edit
   end
 
+  def add_points
+    respond_to do |format|
+      current_user.add_points(10)
+      current_user.save
+      format.html { redirect_to root_path, notice: 'Οι πόντοι σας καταχωρήθηκαν επιτυχώς.' }
+      format.json { render :show, status: :ok, location: @user }
+    end
+  end
+
   # POST /answers
   # POST /answers.json
   def create
@@ -28,7 +37,9 @@ class AnswersController < ApplicationController
 
     respond_to do |format|
       if @answer.save
-        format.html { redirect_to @answer, notice: 'Answer was successfully created.' }
+        current_user.add_points(10)
+        current_user.save
+        format.html { redirect_to root_path, notice: 'Answer was successfully created.' }
         format.json { render :show, status: :created, location: @answer }
       else
         format.html { render :new }

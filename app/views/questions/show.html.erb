@@ -6,6 +6,10 @@
 </h2>
 
 <div class="answers text-center">
-  <span class="glyphicon glyphicon-thumbs-up"></span>
-  <span class="glyphicon glyphicon-thumbs-down"></span>
+  <%= link_to add_points_question_path(@question), method: "post" do %>
+    <span class="glyphicon glyphicon-thumbs-up"></span>
+  <% end %>
+  <%= link_to add_points_question_path(@question), method: "post" do %>
+    <span class="glyphicon glyphicon-thumbs-down"></span>
+  <% end %>
 </div>

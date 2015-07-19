@@ -1,13 +1,12 @@
-<div class="container">
-  <div class="well">
+
+  <div class="well hidden">
     <%= @ad.content %>
   </div>
 
   <div class="text-center">
     <% if @ad.img_url %>
-      <%= link_to add_points_path(@ad) do %>
+      <%= link_to add_points_ad_path(@ad), method: "post" do %>
         <%= image_tag @ad.img_url %>
       <% end %>
     <% end %>
   </div>
-</div>

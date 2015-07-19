@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   get 'ads/index'
 
   get 'ads/:id' => 'ads#show', as: 'ad'
-  get 'ads/:id/add_points' => 'ads#add_points', as: 'add_points'
+  post 'ads/:id/add_points' => 'ads#add_points', as: 'add_points_ad'
+  post 'questions/:id/add_points' => 'questions#add_points', as: 'add_points_question'
 
   get 'questions/index'
 

@@ -1,0 +1,11 @@
+<div class="container">
+	<div class="jumbotron">
+		<h2>Καταχώρηση Αριθμού Εισιτηρίου <small> ( +10 )</small></h2>
+		<%= form_tag("/users/add_points",  method:"put") do %>
+			<div class="form-group">
+				<%=text_field(:ticket, :class=>"form-control", :placeholder=>'Εισιτήριο', :style=>"width:600px") %>
+			</div>
+			<%=submit_tag('Αποθήκευση', :class=>"btn btn-primary") %>
+		<%end%>
+	</div>
+</div>

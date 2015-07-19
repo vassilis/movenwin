@@ -8,6 +8,8 @@ class ApplicationController < ActionController::Base
   def after_sign_in_path_for(resource)
 		if resource.is_a?(Admin)
 			admin_path
+    elsif resource.is_a?(Merchant)
+      merchant_path
 		else
 			root_path
 		end
@@ -22,6 +24,8 @@ class ApplicationController < ActionController::Base
   def layout_by_resource
     if devise_controller? && resource_name == :admin
       "admin"
+    elsif devise_controller? && resource_name == :admin
+      "merchant"
     else
       "application"
     end

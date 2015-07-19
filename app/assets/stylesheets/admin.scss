@@ -1,2 +1,20 @@
+
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+#overall-pie{
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin: 0;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+input.sm {
+  max-width: 100px;
+}

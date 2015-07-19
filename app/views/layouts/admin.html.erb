@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Movenwin</title>
+  <title>Move and Win</title>
   <%= stylesheet_link_tag    'admin', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'admin', 'data-turbolinks-track' => true %>
+  <script src="http://code.highcharts.com/highcharts.js"></script>
+  <script src="http://code.highcharts.com/highcharts-3d.js"></script>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
   <%= render "/admin/shared/nav" %>
+
   <div class="container">
+    
     <%= render "/shared/alerts" %>
-    <div class="page-header">
-      <h1><%= yield :page_title %></h1>
-    </div>
+
+    <% if content_for :page_title %>
+      <div class="page-header">
+        <h1><%= yield :page_title %></h1>
+      </div>
+    <% end %>
 
     <%= yield %>
 

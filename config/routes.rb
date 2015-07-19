@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-
+  devise_for :merchants
   devise_for :users
 
   get '/users/scan_ticket'
@@ -16,6 +16,14 @@ Rails.application.routes.draw do
       get "dashboard" => "dashboard#index"
       get "/" => "questions#index"
       resources :questions
+    end
+  end
+
+  authenticate :merchant do
+    namespace :merchant do
+      get "dashboard" => "dashboard#index"
+      get "/" => "ads#index"
+      resources :ads
     end
   end
 end

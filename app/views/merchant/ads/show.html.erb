@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @ad.content %>
+</p>
+
+<p>
+  <strong>Site url:</strong>
+  <%= @ad.site_url %>
+</p>
+
+<p>
+  <strong>Img url:</strong>
+  <%= @ad.img_url %>
+</p>
+
+<p>
+  <strong>Video url:</strong>
+  <%= @ad.video_url %>
+</p>
+
+<p>
+  <strong>Merchant:</strong>
+  <%= @ad.merchant %>
+</p>
+
+<%= link_to 'Edit', edit_merchant_ad_path([:merchant, @ad]) %> |
+<%= link_to 'Back', merchant_ads_path %>

@@ -146,7 +146,7 @@
   padding: 4px;
 }
 
-#add-ticket-number:hover{
-  cursor:pointer;
+#add-ticket-number a:hover, a:focus{
   color:orange;
+  text-decoration: none;
 }

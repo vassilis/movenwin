@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
+
   devise_for :users
+
+  get '/users/scan_ticket'
+  put '/users/add_points'
+  put '/users/remove_points'
   get 'welcome/index'
 
   root 'welcome#index'

@@ -14,13 +14,13 @@
 
       <div class="points-user-all">
         <small>score</small>
-        <span class="num">1000</span>
+        <span class="num"><%= current_user.total_pts %></span>
         <span class="glyphicon glyphicon-plus"></span>
       </div>
 
       <div class="points-user">
         <small>points</small>
-        <span class="num">351</span>
+        <span class="num"><%= current_user.current_pts %></span>
         <span class="glyphicon glyphicon-shopping-cart"></span>
       </div>
 
@@ -86,7 +86,7 @@
     </li>
     <li class="list-group-item">
       <span class="glyphicon glyphicon-plus"></span>
-      <span class="event-text" id="add-ticket-number">Καταχώρησε αριθμό εισιτηρίου</span>
+      <span class="event-text" id="add-ticket-number"><a href="/users/scan_ticket">Καταχώρησε αριθμό εισιτηρίου</a></span>
       <span class="event-points">+10</span>
     </li>
     <li class="list-group-item">

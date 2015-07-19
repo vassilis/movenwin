@@ -3,6 +3,9 @@
 		<h2>Δώρισε πόντους σε χρήστη</h2>
 		<%= form_tag("/users/remove_points",  method:"put") do %>
 			<div class="form-group">
+				<input type="text" name="email" class="form-control", placeholder='e-mail', style="width:600px"/>
+			<div>
+			<div class="form-group" style="margin-top:10px;">
 				<input type="text" name="points" class="form-control", placeholder='Πόντοι', style="width:600px"/>
 			</div>
 			<%=submit_tag('Αποστολή', :class=>"btn btn-primary") %>

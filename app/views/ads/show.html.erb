@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="well">
+    <%= @ad.content %>
+  </div>
+
+  <div class="text-center">
+    <% if @ad.img_url %>
+      <%= link_to add_points_path(@ad) do %>
+        <%= image_tag @ad.img_url %>
+      <% end %>
+    <% end %>
+  </div>
+</div>

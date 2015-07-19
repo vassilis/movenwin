@@ -10,6 +10,13 @@
     <%#= f.association :merchant %>
   </div>
 
+  <div class="panel panel-info">
+    <div class="panel-heading">Κριτήρια για την εμφάνιση της ερώτησης</div>
+    <div class="panel-body">
+      <%= render :partial => '/shared/criteria' %>
+    </div>
+  </div>
+
   <div class="form-actions">
     <% if @ad.new_record? %>
       <%= link_to 'Επιστροφή', merchant_ads_path, :class => 'btn btn-warning' %>

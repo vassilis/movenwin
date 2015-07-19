@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+
+  get 'ads/index'
+
+  get 'ads/:id' => 'ads#show', as: 'ad'
+  get 'ads/:id/add_points' => 'ads#add_points', as: 'add_points'
+
   get 'questions/index'
 
   devise_for :merchants

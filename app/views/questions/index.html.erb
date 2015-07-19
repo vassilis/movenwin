@@ -1,0 +1,7 @@
+
+
+<div class="list-group">
+  <% @questions.each do |q| %>
+    <%= link_to q.content, q, class: "list-group-item" %>
+  <% end %>
+</div>

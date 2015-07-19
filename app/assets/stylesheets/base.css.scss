@@ -19,6 +19,10 @@
   text-shadow: 2px 2px 0 #532647;
 }
 
+.navbar-brand {
+  font-family: 'Lobster', cursive;
+}
+
 .points-section {
   position: relative;
   max-width: 800px;
@@ -144,9 +148,4 @@
   float: right;
   margin-top: 13px;
   padding: 4px;
-}
-
-#add-ticket-number a:hover, a:focus{
-  color:orange;
-  text-decoration: none;
 }

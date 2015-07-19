@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'questions/index'
+
   devise_for :merchants
   devise_for :users
 
@@ -6,6 +8,8 @@ Rails.application.routes.draw do
   put '/users/add_points'
   put '/users/remove_points'
   get 'welcome/index'
+  get 'questions' => 'questions#index'
+  get 'questions/:id' => 'questions#show', as: 'question'
 
   root 'welcome#index'
 

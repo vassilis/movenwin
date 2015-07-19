@@ -69,6 +69,6 @@ class Merchant::AdsController < Merchant::BaseController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def ad_params
-      params.require(:ad).permit(:content, :site_url, :img_url, :video_url, :merchant_id)
+      params.require(:ad).permit(:content, :weight, :site_url, :img_url, :video_url, :merchant_id)
     end
 end

@@ -1,35 +1,17 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Ads</h1>
+<% content_for :page_title do %>
+	Διαφημίσεις
+<% end %>
 
-<table>
-  <thead>
-    <tr>
-      <th>Content</th>
-      <th>Site url</th>
-      <th>Img url</th>
-      <th>Video url</th>
-      <th>Merchant</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
+<div class="list-group">
     <% @ads.each do |ad| %>
-      <tr>
-        <td><%= ad.content %></td>
-        <td><%= ad.site_url %></td>
-        <td><%= ad.img_url %></td>
-        <td><%= ad.video_url %></td>
-        <td><%= ad.merchant %></td>
-        <td><%= link_to 'Show', [:merchant, ad] %></td>
-        <td><%= link_to 'Edit', edit_merchant_ad_path(ad) %></td>
-        <td><%= link_to 'Destroy', [:merchant, ad], method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+
+      <%= link_to [:merchant, ad], class: 'list-group-item'  do%>
+         <%= ad.content %>
+      <% end %>
     <% end %>
-  </tbody>
-</table>
 
-<br>
+</div>
 
-<%= link_to 'New Ad', new_merchant_ad_path %>
+<%= link_to 'New Ad', new_merchant_ad_path, :class => 'btn btn-primary' %>

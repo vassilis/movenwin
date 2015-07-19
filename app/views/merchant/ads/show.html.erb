@@ -1,4 +1,19 @@
-<p id="notice"><%= notice %></p>
+
+
+	<div class="panel panel-default">
+		<div class="panel-body">
+			<h2><%= @ad.content %></h2>
+		</div>
+		<div class="panel-footer">
+		  <strong> Πόντοι:</strong>
+		  <%= @ad.weight %>
+			<div class="pull-right">
+				<%= link_to 'Επεξεργασία', edit_merchant_ad_path(@ad), :class => 'btn btn-warning btn-xs' %>
+			</div>
+		</div>
+	</div>
+
+<!-- <p id="notice"><%= notice %></p>
 
 <p>
   <strong>Content:</strong>
@@ -25,5 +40,5 @@
   <%= @ad.merchant %>
 </p>
 
-<%= link_to 'Edit', edit_merchant_ad_path([:merchant, @ad]) %> |
-<%= link_to 'Back', merchant_ads_path %>
+<%= link_to 'Edit', edit_merchant_ad_path(@ad) %> |
+<%= link_to 'Back', merchant_ads_path %> -->

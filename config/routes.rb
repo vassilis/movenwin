@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   get '/users/scan_ticket'
   get '/users/invite'
+  get '/users/give_points'
   put '/users/send_invitation'
   put '/users/add_points'
   put '/users/remove_points'

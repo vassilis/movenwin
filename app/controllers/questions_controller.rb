@@ -3,7 +3,9 @@
 class QuestionsController < ApplicationController
 
   def index
-    @questions = Question.all
+    # @questions = Question.all
+    @q = Question.first
+    redirect_to @q
   end
 
   def show

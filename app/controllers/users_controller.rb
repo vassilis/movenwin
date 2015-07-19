@@ -11,6 +11,17 @@ class UsersController < ApplicationController
     end
   end
 
+  def invite
+
+  end
+
+  def send_invitation
+    respond_to do |format|
+      format.html { redirect_to root_path, notice: 'Η πρόσκληση εστάλη.' }
+      format.json { render :show, status: :ok, location: @user }
+    end
+  end
+
   def remove_points
   end
 

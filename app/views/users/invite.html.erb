@@ -1,11 +1,10 @@
-<div class="container">
-	<div class="jumbotron">
-		<h2>Στείλε πρόσκληση σε χρήστη <small> ( +150 )</small></h2>
-		<%= form_tag("/users/send_invitation",  method:"put") do %>
+
+<div class="text-center row">
+		<h2>Στείλε πρόσκληση σε χρήστη</h2><br>
+		<%= form_tag("/users/send_invitation",  method:"put", class: "col-sm-8 col-sm-offset-2") do %>
 			<div class="form-group">
-				<input type="text" name="ticket" class="form-control" placeholder='e-mail' style="width:600px"/>
+				<input type="text" name="ticket" class="form-control" placeholder='E-mail' />
 			</div>
 			<%=submit_tag('Αποστολή', :class=>"btn btn-primary") %>
 		<%end%>
-	</div>
 </div>

@@ -6,6 +6,7 @@
 
 .navbar {
   margin: 0;
+  border-radius: 0;
 }
 
 .logo {
@@ -32,7 +33,7 @@
   max-width: 800px;
   margin: 0 auto;
   background: url("bg.jpg") 50% 50% no-repeat;
-  background-size: 100%;
+  background-size: cover;
   padding: 50px 0;
 }
 
@@ -144,6 +145,13 @@
   .glyphicon-heart{
     background: red;
   }
+}
+
+.event-datetime {
+  font-size: .6em;
+  color: #999;
+  position: absolute;
+  top: 8px;
 }
 
 .event-points {

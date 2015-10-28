@@ -4,15 +4,15 @@
 
 ready = ->
 
-  $(".points-user-all").on "click", ->
+  $(".points-user-all, .footer-btn-add").on "click", ->
     $(".welcome > *").hide();
     $(".list-win").removeClass("hidden").fadeIn();
 
-  $(".points-user").on "click", ->
+  $(".points-user, .footer-btn-buy").on "click", ->
     $(".welcome > *").hide();
     $(".list-buy").removeClass("hidden").fadeIn();
 
-  $(".button-events-list").on "click", ->
+  $(".button-events-list, .footer-btn-home").on "click", ->
     $(".welcome > *").hide();
     $(".list-events").removeClass("hidden").fadeIn();
 

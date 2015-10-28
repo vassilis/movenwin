@@ -1,8 +1,17 @@
 
 
 @import url("//fonts.googleapis.com/css?family=Lobster");
+
+$border-radius-base: 0;
+$border-radius-large: 0;
+$border-radius-small: 0;
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+body {
+  margin-bottom: 100px;
+}
 
 .navbar {
   margin: 0;
@@ -14,9 +23,9 @@
   font-size: 5em;
   position: absolute;
   transform: rotate(-15deg);
-  top: 80px;
-  left: 15px;
-  color: red;
+  top: 120px;
+  left: 5px;
+  color: #FF3A3A;
   text-shadow: 2px 2px 0 #532647;
 }
 
@@ -167,8 +176,16 @@
   text-decoration: none;
 }
 
+.question {
+  border: 1px solid #333;
+  padding: 30px 30px 100px;
+}
+
 .answers {
-  margin-top: 30px;
+  margin-top: -75px;
+  a {
+    text-decoration: none !important;
+  }
   .glyphicon {
     font-size: 48px;
     margin: 10px;
@@ -177,11 +194,16 @@
     background: #333;
     padding: 20px;
     cursor: pointer;
+    border: 10px #FFF solid;
+    &:hover {
+      background: #CCC;
+      color: #333;
+    }
   }
-  .glyphicon-thumbs-up {
-    background: green;
-  }
-  .glyphicon-thumbs-down {
-    background: orange;
-  }
+  // .glyphicon-thumbs-up {
+  //   background: gray;
+  // }
+  // .glyphicon-thumbs-down {
+  //   background: gray;
+  // }
 }

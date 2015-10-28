@@ -1,10 +1,18 @@
 
-<div class="text-center row">
-		<h2>Στείλε πρόσκληση σε χρήστη</h2><br>
-		<%= form_tag("/users/send_invitation",  method:"put", class: "col-sm-8 col-sm-offset-2") do %>
+
+<br>
+
+<div class="panel panel-default">
+	<div class="panel-heading">
+		Στείλε πρόσκληση σε χρήστη
+	</div>
+	<div class="panel-body">
+		<br>
+		<%= form_tag("/users/send_invitation",  method:"put") do %>
 			<div class="form-group">
-				<input type="text" name="ticket" class="form-control" placeholder='E-mail' />
+				<input type="text" name="ticket" class="form-control input-lg" placeholder='Email' />
 			</div>
-			<%=submit_tag('Αποστολή', :class=>"btn btn-primary") %>
-		<%end%>
+			<%= submit_tag('Αποστολή', :class=>"btn btn-danger btn-lg") %>
+		<% end %>
+	</div>
 </div>
